@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Birthday Countdown</title>
+</head>
+<body>
+    <div class="countdown-container">
+        <h1 id="countdown-heading">Countdown to August 19, 2024</h1>
+        
+        <div class="countdown">
+            <div class="circle">
+                <span id="hours">00</span>
+            </div>
+            <div class="circle">
+                <span id="minutes">00</span>
+            </div>
+            <div class="circle">
+                <span id="seconds">00</span>
+            </div>
+        </div>
+
+        <button class="button" id="startButton">Click Me</button>
+    </div>
+    
+    <audio id="birthdayAudio" src="background_music.mp3" loop></audio>
+    
+    <video id="birthdayVideo" style="display: none;">
+        <source src="birthday.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="birthday-message" style="display: none;">
+        <h1>Happy Birthday!</h1>
+
+        <div class="flip-cards-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Understanding</h2>
+                        <p>..</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>You have a deep ability to understand me, even when I struggle to express myself. You see beyond the surface, recognizing my true potential, and offer patience and insight that have helped me grow. This understanding nature is what has allowed our friendship to become so meaningful, and it's a quality I admire deeply in you</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Funny</h2>
+                        <p>..</p>
+                    </div>
+                    <div class="flip-card-back">
+                        
+                        <p>Your sense of humor brightens my day and makes even the toughest moments easier to handle. Whether we're laughing over something small or sharing a joke, your ability to find joy in the little things is something I truly appreciate. It’s a trait that not only brings us closer but also makes you stand out in the best possible way.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Amazing</h2>
+                        <p>..</p>
+                    </div>
+                    <div class="flip-card-back">
+                        
+                        <p>You are an incredible person in so many ways. From your kindness to your thoughtfulness, you consistently show qualities that inspire me. Your amazing nature is reflected in how you treat others and how you approach life. I admire your strength, your positivity, and your ability to make a difference in the lives of those around you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
