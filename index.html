@@ -2,80 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+ 
     <title>Birthday Countdown</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="countdown-container">
-        <h1 id="countdown-heading">Countdown to August 19, 2024</h1>
+<body class="bg-black flex items-center justify-center min-h-screen p-4">
+    <div class="countdown-container relative text-center bg-white  bg-opacity-70 shadow-lg rounded-lg p-6 md:p-10 max-w-md mx-auto overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat blur-background" style="background-image: url('backimage.jpeg');"></div>
+        <h1 id="countdown-heading" class="text-2xl md:text-4xl font-bold mb-6">COUNTDOWN <br> August 19 2024</h1>
         
-        <div class="countdown">
-            <div class="circle">
+        <div class="countdown flex justify-center space-x-4 mb-8">
+            <div class="circle w-20 h-20 md:w-24 md:h-24 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl md:text-3xl font-bold">
                 <span id="hours">00</span>
             </div>
-            <div class="circle">
+            <div class="circle w-20 h-20 md:w-24 md:h-24 bg-green-500 rounded-full flex items-center justify-center text-white text-xl md:text-3xl font-bold">
                 <span id="minutes">00</span>
             </div>
-            <div class="circle">
+            <div class="circle w-20 h-20 md:w-24 md:h-24 bg-red-500 rounded-full flex items-center justify-center text-white text-xl md:text-3xl font-bold">
                 <span id="seconds">00</span>
             </div>
         </div>
 
-        <button class="button" id="startButton">Click Me</button>
+        <button class="button bg-purple-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300" id="startButton">Click Me</button>
     </div>
     
     <audio id="birthdayAudio" src="background_music.mp3" loop></audio>
     
-    <video id="birthdayVideo" style="display: none;">
+    <video id="birthdayVideo" class="hidden">
         <source src="birthday.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     
-    <div class="birthday-message" style="display: none;">
-        <h1>Happy Birthday!</h1>
+    <div class="birthday-message hidden mt-10 text-center">
+        <h2  id ="typewrite2" class="text-3xl md:text-5xl font-bold mb-8">Happy Birthday!<br> <div id="typewrite">"I would describe you in 3 words</div></h2>
 
-        <div class="flip-cards-container">
+        <div class="flip-cards-container grid grid-cols-1 md:grid-cols-3 gap-4">
             <div class="flip-card">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h2>Understanding</h2>
-                        <p>..</p>
+                    <div class="flip-card-front bg-blue-300 p-4 rounded-lg shadow-lg">
+                        <h2 class="text-5xl font-bold">Understanding</h2>
+                        <p class="text-sm">..</p>
                     </div>
-                    <div class="flip-card-back">
-                        <p>You have a deep ability to understand me, even when I struggle to express myself. You see beyond the surface, recognizing my true potential, and offer patience and insight that have helped me grow. This understanding nature is what has allowed our friendship to become so meaningful, and it's a quality I admire deeply in you</p>
+                    <div class="flip-card-back bg-white p-4 rounded-lg shadow-lg">
+                        <p>You have a deep ability to understand me, even when I struggle to express myself. You see beyond the surface, recognizing my true potential, and offer patience and insight that have helped me grow. This understanding nature is what has allowed our friendship to become so meaningful, and it's a quality I admire deeply in you.</p>
                     </div>
                 </div>
             </div>
+
             <div class="flip-card">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h2>Funny</h2>
-                        <p>..</p>
+                    <div class="flip-card-front bg-green-300 p-4 rounded-lg shadow-lg">
+                        <h2 class="text-8xl font-bold">Funny</h2>
+                        <p class="text-sm">..</p>
                     </div>
-                    <div class="flip-card-back">
-                        
+                    <div class="flip-card-back bg-white p-4 rounded-lg shadow-lg">
                         <p>Your sense of humor brightens my day and makes even the toughest moments easier to handle. Whether we're laughing over something small or sharing a joke, your ability to find joy in the little things is something I truly appreciate. It’s a trait that not only brings us closer but also makes you stand out in the best possible way.</p>
                     </div>
                 </div>
             </div>
+
             <div class="flip-card">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h2>Amazing</h2>
-                        <p>..</p>
+                    <div class="flip-card-front bg-red-300 p-4 rounded-lg shadow-lg">
+                        <h2 class="text-6xl font-bold">Amazing</h2>
+                        <p class="text-sm">..</p>
                     </div>
-                    <div class="flip-card-back">
-                        
-                        <p>You are an incredible person in so many ways. From your kindness to your thoughtfulness, you consistently show qualities that inspire me. Your amazing nature is reflected in how you treat others and how you approach life. I admire your strength, your positivity, and your ability to make a difference in the lives of those around you</p>
+                    <div class="flip-card-back bg-white p-4 rounded-lg shadow-lg">
+                        <p>You are an incredible person in so many ways. From your kindness to your thoughtfulness, you consistently show qualities that inspire me. Your amazing nature is reflected in how you treat others and how you approach life. I admire your strength, your positivity, and your ability to make a difference in the lives of those around you.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-      
+        /* From Uiverse.io by StealthWorm */ 
+<button type="button" class="btn">
+      <strong><a href="Happy.pdf"> DOWNLOAD MY LETTER</a></strong>
+    <div id="container-stars">
+        <div id="stars"></div>
     </div>
 
+    <div id="glow">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</button>
 
+    </div>
 
     <script src="script.js"></script>
 </body>
