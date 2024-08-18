@@ -2,7 +2,7 @@ const countdownContainer = document.querySelector('.countdown-container');
 const birthdayMessageElement = document.querySelector('.birthday-message');
 const birthdayAudio = document.getElementById('birthdayAudio');
 const startButton = document.getElementById('startButton');
-const targetDate = new Date('2024-08-19T01:50:00'); // Set the target date
+const targetDate = new Date('2024-08-19T02:30:00'); // Set the target date
 
 function updateCountdown() {
 const now = new Date();
